@@ -117,8 +117,16 @@ wallpattern_voronoi_radius = 0.5;
 
 /* [Wall Cutout] */
 wallcutout_enabled=false;
+wallcutout_left_start = 0;
+wallcutout_right_start = 0;
+wallcutout_front_start = 14;
+wallcutout_back_start = 0;
+wcls = wallcutout_left_start / 42;
+wcrs = wallcutout_right_start / 42;
+wcfs = wallcutout_front_start / 42;
+wcbs = wallcutout_back_start / 42;
 // wall to enable on, front, back, left, right. 0: disabled; Positive: GF units; Negative: ratio length/abs(value)
-wallcutout_walls=[1,0,0,0];  //0.1
+wallcutout_walls=[wcfs, wcbs, wcls, wcrs];  //0.1
 //default will be binwidth/2
 wallcutout_width=0;
 wallcutout_angle=70;
