@@ -78,8 +78,13 @@ spacer = false;
 label_style = "normal"; //[disabled: no label, normal:normal, click]
 // Include overhang for labeling (and specify left/right/center justification)
 label_position = "left"; // ["left", "right", "center", "leftchamber", "rightchamber", "centerchamber"]
-// Width, Depth, Height, Radius. Width in Gridfinity units of 42mm, Depth and Height in mm, radius in mm. Width of 0 uses full width. Height of 0 uses Depth, height of -1 uses depth*3/4. 
-label_size = [0,14,0,0.6]; // 0.01
+// Width, Depth, Height, Radius. Width in Gridfinity units of 42mm, Depth and Height in mm, radius in mm. Width of 0 uses full width. Height of 0 uses Depth, height of -1 uses depth*3/4.
+label_width = 0; // 0 -> full width
+label_width_gf = label_width / 42;
+label_depth = 14;
+label_height = 0; // 0 -> use depth
+label_radius = 0.6;
+label_size = [label_width_gf, label_depth, label_height, label_radius]; // 0.01
 // Creates space so the attached label wont interferr with stacking
 label_relief = 0; // 0.1
 
