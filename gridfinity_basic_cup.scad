@@ -108,7 +108,16 @@ wallpattern_style = "grid"; //["grid", "hexgrid", "voronoi","voronoigrid","voron
 // Spacing between pattern
 wallpattern_hole_spacing = 2; //0.1
 // wall to enable on, front, back, left, right.
-wallpattern_walls=[1,1,1,1]; 
+wallpattern_walls_front = 1;
+wallpattern_walls_back = 1;
+wallpattern_walls_left = 1;
+wallpattern_walls_right = 1;
+wallpattern_walls=[
+    wallpattern_walls_front,
+    wallpattern_walls_back,
+    wallpattern_walls_left,
+    wallpattern_walls_right
+  ];
 // Add the pattern to the dividers
 wallpattern_dividers_enabled=false; 
 //Number of sides of the hole op
