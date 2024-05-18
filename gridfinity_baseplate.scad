@@ -11,7 +11,8 @@ Lid_Options = "default";//[default, flat:Flat Removes the internal grid from bas
 
 Lid_Include_Magnets = true;
 // Base height, when the bin on top will sit, in GF units
-Lid_Efficient_Base_Height = 0.4;// [0.4:0.1:1]
+Lid_Efficient_Base_Height_mm = 2.8;
+Lid_Efficient_Base_Height = Lid_Efficient_Base_Height_mm / gf_zpitch;// [0.4:0.1:1]
 // Thickness of the efficient floor
 Lid_Efficient_Floor_Thickness = 0.7;// [0.7:0.1:7]
 
